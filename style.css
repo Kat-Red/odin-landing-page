@@ -56,19 +56,26 @@ nav h3{
 	background: #e5e7eb;
 }
 
-.quote-section quote{
+q{
 	font-size: 36px;
 	color: #1f2937;
 	font-weight: 300;
 }
 
+
+
+
+
 header{
-	padding: 16px;
+	padding: 16px 0;
 }
+
 
 nav{
 	display: flex;
 	justify-content: space-between;
+	width: 80vw;
+	margin: auto;
 }
 
 nav ul{
@@ -80,15 +87,19 @@ nav ul{
 main{
 	display: flex;
 	flex-direction: column;
-	gap: 80px;
+	gap: 20%;
 }
 
-.hero-section{
+
+.content{
 	display: flex;
-	padding: 80px 0;
+	flex: 1 1 30vh;
 	justify-content: space-between;
-	gap: 40px;
 	align-items: center;
+	padding: 80px 0;
+	gap: 28px;
+	width: 80vw;
+	margin: auto;
 }
 
 .hero-text{
@@ -99,9 +110,13 @@ main{
 	margin: 12px 0;
 }
 
+.information-section .content{
+	flex-direction: column;
+}
+
 .information-section h2{
 	text-align: center;
-	margin: 40px;
+	margin-bottom: 40px;
 }
 
 .container{
@@ -128,4 +143,32 @@ main{
 	width: 150px;
 	margin: 12px 0;
 	border-radius: 8px;
+}
+
+.quote-section .content{
+	flex-direction: column;
+}
+
+.sayer{
+	margin-left: auto;
+}
+
+.flex-cont{
+	padding: 32px 100px;
+	background: #3882f6;
+	border-radius: 8px;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	flex: 1;
+}
+
+.flex-cont button{
+	border: 3px solid white;
+}
+
+footer{
+	text-align: center;
+	padding: 16px;
+	color: white;
 }
